@@ -20,11 +20,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             Ec2huamanibrosnanTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+//                    Greeting(
+//                        name = "Android",
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
+                    Cuestionario(modifier = Modifier.padding(innerPadding))
                 }
+
             }
         }
     }
