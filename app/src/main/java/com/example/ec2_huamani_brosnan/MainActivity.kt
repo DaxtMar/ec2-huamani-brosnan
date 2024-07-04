@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -11,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.ec2_huamani_brosnan.ui.theme.Ec2huamanibrosnanTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +26,15 @@ class MainActivity : ComponentActivity() {
 //                        name = "Android",
 //                        modifier = Modifier.padding(innerPadding)
 //                    )
-                    Cuestionario(modifier = Modifier.padding(innerPadding))
+                    //PRIMERO
+                    //moddelo(modifier = Modifier.padding(innerPadding))
+                    //SEGUNDO
+                    Box(modifier = Modifier
+                        .fillMaxSize()
+                        .padding(35.dp)){
+
+                        listado()
+                    }
                 }
 
             }

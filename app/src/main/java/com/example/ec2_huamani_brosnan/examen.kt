@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
 @Composable
-fun Cuestionario(modifier: Modifier = Modifier) {
+fun moddelo(modifier: Modifier = Modifier) {
 
     var selectedHabilidades by remember { mutableStateOf(listOf<String>()) }
     var trabajoSignificativo by remember { mutableStateOf("") }
